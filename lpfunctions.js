@@ -1,3 +1,7 @@
+function showModal() {
+  document.getElementById("modal").style.display = "block";
+  generateJoke();
+}
 // Função para chamar a API do OpenAI e gerar o trocadilho
 function generateJoke() {
     // Obtendo o tema inserido pelo usuário
