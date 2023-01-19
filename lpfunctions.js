@@ -10,7 +10,7 @@ function generateJoke() {
       "timeout": 0,
       "headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer API_KEY"
+        "Authorization": "Bearer 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"
       },
       "data": JSON.stringify({
         "prompt": "Crie um trocadilho infame sobre " + theme + " e que faça sentido como uma história, porém cômica",
