@@ -1,5 +1,5 @@
 // Declare sua API Key como uma variável global
-const apiKey = 'SUA_API_KEY_AQUI';
+const apiKey = process.env.API_KEY;
 
 // Função para chamar a API do OpenAI e gerar o trocadilho
 async function generateJoke(topic) {
