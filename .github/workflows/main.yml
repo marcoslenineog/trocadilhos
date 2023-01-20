@@ -1,0 +1,20 @@
+name: API Key Protection
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Download secrets
+      run: |
+        echo "::set-env name=API_KEY::${{ secrets.API_KEY }}"
+
+    - name: Use API Key
+      run: node index.js
