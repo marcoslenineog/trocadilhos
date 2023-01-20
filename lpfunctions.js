@@ -1,7 +1,5 @@
 // Declare sua API Key como uma variável global
 const apiKey = process.env.API_KEY;
-
-
     
      function showModal() {
   // Verifica se o input esta preenchido
